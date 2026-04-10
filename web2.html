@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> </title>
+
+<style>
+	
+	body{
+		margin: 0;
+		font-family: 'poppins',sans-serif;
+	}
+
+	.hero{
+		height:100vh;
+		background: url('1644321.jpg') no-repeat center/cover;
+		position: relative;
+	}
+.navbar{
+	position: relative;
+	z-index: 2;
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+	padding: 20px;
+
+	backdrop-filter: blur(10px);
+	background: rgba(255, 255, 255, 0.1);
+}
+
+.navbar a {
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+	position: relative;
+	transition: 0.3s;
+}
+
+
+.navbar a ::after {
+	content: "";
+	position: absolute;
+	width: 0%;
+	height: 2px;
+	background: white;
+	left: 0;
+	bottom: -5px;
+	transition: 0.3s;
+}
+
+.hero::before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	top: 0;
+	left: 0;
+}
+
+
+.navbar a:hover{
+	text-shadow: 0 0 8px white;
+
+}
+.content {
+	position: relative;
+	z-index: 2;
+	color: white;
+	text-align: center;
+	top: 40%;
+}
+.content{
+	font-size: 50px;
+}
+</style>
+
+
+</head>
+<body>
+
+
+<div class="hero">
+	
+	<div class="navbar">
+		<a href="#">Home</a>
+		<a href="#">About</a>
+		<a href="#">Services</a>
+		<a href="#">Gallery</a>
+		<a href="#">Contact</a>
+	</div>
+
+	<div class="content">
+		<h1>Welcome</h1>
+		<p>Beautiful Background Navbar</p>
+	</div>
+
+</div>
+</body>
+</html>
